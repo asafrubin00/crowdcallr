@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew install poppler)",
+      "Bash(python3 -c \"import pdfplumber; pdf = pdfplumber.open\\(''/Users/asafrubin/Documents/02_Work/Education/[2018] University of Witwatersrand/[2016] PhD/KIEHRA/[2019] Crowdcallr/CC USER GUIDE/Docs/Crowdcallr User Guide v1.0 \\(April 2019\\).pdf''\\); print\\(len\\(pdf.pages\\), ''pages''\\); text = ''''.join\\([p.extract_text\\(\\) or '''' for p in pdf.pages]\\); print\\(text[:8000]\\)\")",
+      "Bash(pip3 install pdfplumber -q)",
+      "Bash(python3 -c \":*)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git config --global user.name)",
+      "Bash(git config --global user.email)",
+      "Bash(brew install gh)",
+      "Bash(gh auth status)",
+      "Bash(git config --global user.name \"Asaf Rubin\")",
+      "Bash(git config --global user.email \"asafrubin00@users.noreply.github.com\")"
+    ]
+  }
+}
