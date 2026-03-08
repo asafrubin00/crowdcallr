@@ -4,7 +4,7 @@ A prediction market for academic research. Researchers post problems, the crowd 
 
 ## The Idea
 
-Inspired by Rubin (2018) *Knowledge Management Determinants of Breakthrough Research Productivity*, this platform combines:
+Inspired by my PhD thesis (2018) *Knowledge Management Determinants of Breakthrough Research Productivity*, this platform combines:
 
 - **InnoCentive-style challenge markets** — researchers post real problems, the crowd solves them
 - **Prediction market mechanics** — users bet virtual coins on which solution will win
