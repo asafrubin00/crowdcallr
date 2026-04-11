@@ -1,56 +1,55 @@
-# CrowdCallr — Research Challenge Market
+# CrowdCallr
 
-A prediction market for academic research. Researchers post problems, the crowd proposes solutions and bets virtual coins on the best one. Market prices reveal collective confidence.
+**A prediction market for academic research. What if the crowd could peer review?**
+
+🔬 [View live →](https://crowdcallr.vercel.app)
+
+Academic research moves slowly. Peer review is opaque, bottlenecked, and often disconnected from the collective intelligence that exists across research communities. CrowdCallr is an experiment in fixing that; a platform where researchers post real problems, the crowd proposes solutions, and market mechanics reveal which answers the community actually believes in.
+
+---
 
 ## The Idea
 
-Inspired by my PhD thesis (2018) *Knowledge Management Determinants of Breakthrough Research Productivity*, this platform combines:
+Inspired by my PhD thesis - *Knowledge Management Determinants of Breakthrough Research Productivity*( (Wits University, 2018) -CrowdCallr combines two proven mechanisms:
 
-- **InnoCentive-style challenge markets** — researchers post real problems, the crowd solves them
-- **Prediction market mechanics** — users bet virtual coins on which solution will win
-- **Collective intelligence aggregation** — market percentages reveal crowd confidence at a glance
-- **Parimutuel payout** — bettors who picked the winner share the full pot proportionally
+- **InnoCentive-style challenge markets**: researchers post problems, the crowd solves them
+- **Prediction market mechanics**: users stake virtual coins on the solution they think will win
+
+The result is a system where market prices do the work of peer review: a solution trading at 70% market share has 70% of the crowd's conviction behind it. That's a signal worth paying attention to.
+
+---
 
 ## How It Works
 
 1. A researcher posts a **challenge** with a virtual coin prize pool
-2. Other researchers propose **solutions**
-3. Users **bet coins** on the solution they think is best
-4. Market prices update in real time — a 60% market share means 60% of coins back that solution
-5. The challenge poster **picks a winner**
-6. The winner gets the prize. Bettors who backed the winner share the pot.
+2. Other researchers submit **solutions**
+3. Users **bet coins** on the solution they back
+4. Market prices update in real time — reflecting collective confidence
+5. The challenge poster **selects a winner**
+6. The winner claims the prize; backers who picked correctly share the pot
 
-## Running Locally
-
-```bash
-npm install
-npm run dev
-```
-
-Then open [http://localhost:5173](http://localhost:5173)
+---
 
 ## Tech Stack
 
-- React 18 + Vite
-- Tailwind CSS
-- React Router v6
-- All state in-memory (no backend — refreshing resets to demo data)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+React 18 + Vite, Tailwind CSS, React Router v6. Frontend-only prototype — all state is in-memory, pre-loaded with demo data. Deployed on Vercel.
+
+---
 
 ## Pages
 
 | Route | Description |
-|-------|-------------|
+|---|---|
 | `/` | Challenge feed with filters |
-| `/challenge/:id` | Challenge detail, solutions, betting |
+| `/challenge/:id` | Challenge detail, solutions, and betting |
 | `/post` | Post a new research challenge |
-| `/leaderboard` | Top solvers, questioners, market activity |
+| `/leaderboard` | Top solvers, questioners, and market activity |
+
+---
 
 ## Prototype Status
 
-This is a **frontend-only prototype** with pre-loaded demo data. All interactions work but state resets on page refresh. A production version would need:
-
-- User authentication
-- Persistent database (Postgres / Supabase)
-- Real-money or token mechanics (with appropriate licensing)
-- Email notifications
-- Moderation tools
+This is a **frontend-only prototype**. All interactions are functional but state resets on page refresh. A production version would require user authentication, a persistent database, and moderation tooling. The point here is the mechanic, and whether the market price of an idea is a better signal than a committee's opinion of it.
