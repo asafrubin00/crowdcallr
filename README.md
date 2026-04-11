@@ -10,7 +10,7 @@ Academic research moves slowly. Peer review is opaque, bottlenecked, and often d
 
 ## The Idea
 
-Inspired by my PhD thesis - *Knowledge Management Determinants of Breakthrough Research Productivity*( (Wits University, 2018) -CrowdCallr combines two proven mechanisms:
+Inspired by my PhD thesis - *Knowledge Management Determinants of Breakthrough Research Productivity* (Wits University, 2018) -CrowdCallr combines two proven mechanisms:
 
 - **InnoCentive-style challenge markets**: researchers post problems, the crowd solves them
 - **Prediction market mechanics**: users stake virtual coins on the solution they think will win
