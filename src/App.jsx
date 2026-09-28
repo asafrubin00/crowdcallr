@@ -11,7 +11,7 @@ export default function App() {
   return (
     <AppProvider>
       <BrowserRouter>
-        <div className="min-h-screen bg-slate-100">
+        <div className="min-h-screen bg-slate-100 flex flex-col">
           <Header />
           <main>
             <Routes>
@@ -21,6 +21,9 @@ export default function App() {
               <Route path="/leaderboard" element={<Leaderboard />} />
             </Routes>
           </main>
+          <footer className="mt-auto px-4 py-6 text-center text-xs text-slate-500">
+            © 2026 <a className="underline underline-offset-2 hover:text-slate-700" href="https://asafrubin00.github.io/asaf-rubin-website/">Asaf Rubin</a>. All rights reserved.
+          </footer>
         </div>
       </BrowserRouter>
     </AppProvider>
